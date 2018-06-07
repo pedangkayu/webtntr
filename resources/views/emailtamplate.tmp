@@ -1,0 +1,7 @@
+@extends('Emails.template')
+
+@section('title', 'Hi, Nama')
+
+@section('content')
+
+@endsection

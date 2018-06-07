@@ -1,0 +1,82 @@
+@extends('layouts.app')
+
+@section('meta')
+	<link rel="stylesheet" href="//cdn.datatables.net/1.10.7/css/jquery.dataTables.min.css">
+@endsection
+
+@section('content')
+
+	<div class="card">
+		<div class="card-body">
+			<div class="table-responsive">
+				<table class="table" id="booking-all">
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>NAME</th>
+							<th>EMAIL</th>
+							<th>PHONE</th>
+							<th>LEVEL</th>
+							<th>ONLINE</th>
+							<th>TRASH</th>
+						</tr>
+					</thead>
+				</table>
+			</div>
+		</div>
+	</div>
+
+@endsection
+
+@section('footer')
+	<script type="text/javascript" src="//cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript">
+			$(function() {
+				$('#booking-all').DataTable({
+		        processing: true,
+		        serverSide: true,
+		        ajax: {
+		            url: base_url('/users/anydata'),
+		            method: 'POST'
+		        },
+		        columns: [
+							{data: 0},
+							{data: 1},
+							{data: 2},
+							{data: 3},
+							{data: 4},
+							{data: 5},
+							{data: 6}
+		        ],
+		        initComplete: function () {
+		            this.api().columns().every(function () {
+		                var column = this;
+		                var input = document.createElement("input");
+		                $(input).appendTo($(column.footer()).empty())
+		                .on('change', function () {
+		                    column.search($(this).val()).draw();
+		                });
+		            });
+		        }
+		    });
+
+				trash = function(id){
+          var c = confirm('Are you sure ?');
+          if(c){
+            toastr.warning('Deleting...');
+            $.ajax({
+                url: base_url('/users/' + id),
+                type: 'DELETE',
+                cache : false,
+                dataType : 'json',
+                success: function(json) {
+                  toastr.clear();
+                  toastr.success(json.err);
+                }
+            });
+          }
+        }
+
+			});
+	</script>
+@endsection

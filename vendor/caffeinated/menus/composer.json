@@ -1,0 +1,25 @@
+{
+    "name": "caffeinated/menus",
+    "description": "Laravel 5 Menus",
+    "keywords": ["menu", "navigation", "laravel", "caffeinated"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Shea Lewis",
+            "email": "shea.lewis89@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.4",
+        "illuminate/support": "5.3.*",
+        "illuminate/config": "5.3.*",
+        "illuminate/routing": "5.3.*",
+        "illuminate/view": "5.3.*",
+        "laravelcollective/html": "5.3.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Caffeinated\\Menus\\": "src/"
+        }
+    }
+}

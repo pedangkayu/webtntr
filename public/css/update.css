@@ -1,0 +1,13 @@
+textarea {
+	resize :none;
+}
+
+.badges-items{
+	z-index: 10000;
+	height: 300px;
+	overflow: auto;
+}
+
+/*.slimScrollDiv{
+	z-index: 10000;
+}*/
