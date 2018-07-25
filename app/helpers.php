@@ -13,7 +13,7 @@ function typePost() {
 }
 
 function StsDms() {
-	return array(1 => 'statis', 2 => 'sinamis');
+	return array(1 => 'statis', 2 => 'dinamis');
 }
 
 function setUrlSlug($kata){

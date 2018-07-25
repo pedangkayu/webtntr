@@ -7,7 +7,7 @@ return [
          */
         'defaults'       => [
             'title'        => "", // set false to total remove
-            'description'  => 'Balinese Spa Centre provides Bali Spa Information In Bali', // set false to total remove
+            'description'  => 'Tinatar Innovation - Inovasi teknologi yang mudah digunakan', // set false to total remove
             'separator'    => ' - ',
             'keywords'     => [],
             'canonical'    => false, // Set null for using Url::current(), set false to total remove
@@ -30,7 +30,7 @@ return [
          */
         'defaults' => [
             'title'       => '', // set false to total remove
-            'description' => 'Balinese Spa Centre provides Bali Spa Information In Bali', // set false to total remove
+            'description' => 'Tinatar Innovation - Inovasi teknologi yang mudah digunakan', // set false to total remove
             'url'         => false, // Set null for using Url::current(), set false to total remove
             'type'        => false,
             'site_name'   => false,

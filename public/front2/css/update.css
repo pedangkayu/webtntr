@@ -1,0 +1,145 @@
+ul.footer-menus {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul.footer-menus li {
+  display: inline-block;
+}
+ul.footer-menus li a {
+  padding: 0 8px;
+  line-height: 5pt;
+  border-left: solid 1px #DDD;
+}
+ul.footer-menus li:first-child a {
+  border-left: none;
+}
+ul.footer-menus li a.active {
+  background: none;
+}
+ul.footer-menus li a.active {
+  border-radius: 0;
+}
+
+.typeahead{
+  z-index: 10000;
+}
+
+ul.typeahead {
+  width: auto !important;
+}
+ul.typeahead > li{
+  display: list-item;
+}
+ul.typeahead > li::before{
+  content: none;
+}
+
+ul.typeahead > li > a{
+
+}
+
+.top-search{}
+.top-search .search input{
+  padding: 5px;
+}
+
+
+
+.mtop1 {
+  margin-top: 10px;
+  clear: both
+}
+
+
+
+/* PEMESANAN */
+  .forminput {
+    border: #ccc solid 1px;
+    border-radius: 5px;
+    padding: 13px 20px;
+    width: 100%;
+    resize: none;
+    border: #ccc solid 1px;
+    border-radius: 5px;
+    padding: 13px 20px;
+    resize: none;
+  }
+
+
+
+  #line30 {
+  margin-bottom: 30px;
+  }
+
+
+
+
+
+.titlebox {
+    position: absolute;
+    font-size: 12pt;
+    left: 5px;
+    top: 5px;
+    color: #E90000;
+ 
+	z-index: 1000;
+	left : 5%;
+	top : 5%;
+	text-shadow: 0px 0px 9px #FFF;
+}
+
+
+ .datebox {
+	color: #FCFCFC;
+	margin-top: 6px;
+	margin-bottom: 6px;
+	font-size: 11px;
+}
+
+
+
+ .marketingtop {
+   left: 5px;
+ }
+
+
+ #projectBox {
+    color: #FFF;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  font-size: 20px;
+ }
+
+
+ .panel-body {
+  font-size: 16px;
+  color: #5A7291;
+  line-height: 20pt;
+  font-weight: 600;
+ }
+
+
+ #appsbox {
+  font-size: 14px;
+  color: #515D7B;
+  line-height: 20pt;
+  font-weight: 600;
+   margin-bottom: 20px;
+   border: 0px solid #ddd;
+ }
+
+ .project h3 a {
+  color: #FFFFFF;
+
+ }
+
+
+
+.slidertext {
+    font-size: 33px;
+}
+
+#spaceimg {
+  margin: 3px;
+}

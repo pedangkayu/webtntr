@@ -1,0 +1,29 @@
+@extends('layouts.app')
+
+@section('meta')
+
+@endsection
+
+@section('content')
+
+	<div class="card">
+		<div class="card-head">
+			<header>Header</header>
+		</div>
+		<div class="card-body">
+			...
+		</div>
+
+		<div class="card-actionbar">
+				<div class="card-actionbar-row">
+						<button type="submit" class="btn btn-flat btn-accent ink-reaction">Simpan Akun</button>
+				</div>
+		</div>
+
+	</div>
+
+@endsection
+
+@section('footer')
+
+@endsection
